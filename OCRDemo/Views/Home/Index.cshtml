@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Parcel OCR";
+}
+
+<h2 class="text-center"> OCR Demo</h2>
+
+<div>
+    <video id="camera" autoplay></video>
+    <canvas id="snapshot"></canvas>
+    <button id="capture">Capture</button>
+</div>
+
+<div id="results">
+    <h4>OCR Results</h4>
+    <p id="ocrResult"></p>
+    <h4>Suggestions</h4>
+    <ul id="suggestions"></ul>
+</div>
+
+<script type="text/javascript" src="~/js/ProcessImage.js">
+</script>
